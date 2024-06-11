@@ -1,0 +1,79 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+}
+
+.container {
+  display: grid;
+  grid-gap:3px;
+  grid-template-columns:repeat(4, 1fr) ;
+  grid-template-rows:auto auto auto; /* tre rader */
+ }
+
+
+ header{
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 3px;
+
+ }
+
+nav{
+  background-color: blueviolet;
+  min-height: 10vh;
+ 
+}
+
+.section-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3px;
+  grid-column: 1/-1;
+ 
+}
+
+section {
+  background-color: palevioletred;
+   min-height: 80vh;
+}
+
+footer {
+  background-color: beige;
+  grid-column: 1/-1;
+  min-height: 10vh;
+
+}
+
+
+@media screen and (max-width:600px) {
+
+header{
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 3px;
+ }
+
+ .section-container{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 15px;
+  grid-column: 1/-1;
+ 
+}
+section {
+     min-height: 20vh;
+}
+
+footer {
+  background-color: beige;
+  grid-column: 1/-1;
+  min-height: 10vh;
+  margin-top: 15px;
+
+}
+
+
+}

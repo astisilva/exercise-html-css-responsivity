@@ -1,0 +1,52 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: blueviolet;
+  min-height: 10vh;
+  margin-bottom: 0.8rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+article {
+  min-width: 30vw
+}
+
+section {
+  min-height: 15vh;
+  background-color: darkorchid;
+  margin-bottom: 0.8rem;
+}
+
+aside {
+  background-color: rgb(230, 172, 197);
+  min-width: 30vw;
+  /* min-height: 10vh; */
+  margin-bottom: 0.8rem;
+}
+
+footer {
+  margin-top: auto;
+  background-color: rgb(216, 216, 160);
+  min-height: 20vh;
+}
+
+@media screen and (max-width:600px) {
+  main {
+    flex-direction: column;
+  }
+
+  aside {
+    margin-top: 4rem;
+    min-height: 15vh;
+  }
+
+}
