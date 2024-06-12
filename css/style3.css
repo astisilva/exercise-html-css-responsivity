@@ -90,10 +90,7 @@ body {
 
 
 @media screen and (max-width:600px) {
-  body {
-    background-color: green;
-  }
-
+  
   .header {
     display: flex;
     justify-content: center;
