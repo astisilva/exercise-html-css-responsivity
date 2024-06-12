@@ -1,0 +1,32 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  margin: 2rem 0 1rem 2.5rem;
+}
+
+nav {
+  background-color: rebeccapurple;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+section {
+  width: 30vw;
+  height: 12vh;
+  border-radius: 3rem;
+  background-color: purple;
+
+}
