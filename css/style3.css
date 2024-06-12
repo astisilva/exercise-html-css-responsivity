@@ -1,7 +1,6 @@
-html{
+html {
   height: 100%;
 }
-
 
 body {
   min-height: 100vh;
@@ -18,14 +17,14 @@ body {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  flex:1;
+  flex: 1;
 
 }
 
 .nav-boll {
   background-color: rebeccapurple;
-  height: 5rem;
-  width: 5rem;
+  height: 6rem;
+  width: 6rem;
   border-radius: 50%;
 }
 
@@ -37,9 +36,9 @@ body {
 }
 
 .section-article {
-    border-radius: 4rem;
-  background-color: purple;  
-  flex:1;
+  border-radius: 4rem;
+  background-color: purple;
+  flex: 1;
 }
 
 .main-container {
@@ -47,8 +46,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   gap: 2rem;
-  margin: 3rem;
-  flex:2;
+  margin: 2em;
+  flex: 2;
 
 }
 
@@ -56,24 +55,21 @@ body {
   display: flex;
   flex-direction: column;
   flex: 2;
-  flex-wrap: wrap;
   gap: 0.4rem;
-
-
-
-
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+}
+
 
 .box-left {
-  height: 10vh;
+  flex: 2;
+  height: 20vh;
   background-color: pink;
-
 }
-
-
-
-
-
 
 .right {
   display: flex;
@@ -87,9 +83,43 @@ body {
   flex: 1;
 }
 
-
-
 .footer {
- flex:1;
+  flex: 1;
   background-color: rgb(124, 149, 128);
+}
+
+
+@media screen and (max-width:600px) {
+  body {
+    background-color: green;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: row;
+  }
+
 }
