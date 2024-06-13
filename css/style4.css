@@ -51,6 +51,7 @@ body {
   background-color: rgb(220, 15, 189);
   grid-column: 3/ 5;
   grid-row: span 2;
+  border-radius: 4rem;
 }
 
 .footer {
