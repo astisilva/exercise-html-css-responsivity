@@ -1,1 +1,59 @@
-/* övning 4 */pö,,
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  margin: 3rem;
+}
+
+.content {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 2rem;
+  grid-row: 2 / 3;
+}
+
+.section-boll {
+  background-color: purple;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  grid-column: 1 / -1;
+}
+
+.box {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.purple {
+  background-color: fuchsia;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.bottom-box {
+  background-color: rgb(220, 15, 189);
+  grid-column: 3/ 5;
+  grid-row: span 2;
+}
+
+.footer {
+  background-color: rgb(129, 157, 129);
+ min-height: 10vh;
+}
