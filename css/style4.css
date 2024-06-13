@@ -88,6 +88,13 @@ header{
     justify-content: center;
   }
 
+  
+.box{
+  min-height: 10vh;
+  width: 100%;
+  border-radius: 12px;
+}
+
   main {
     .content {
       grid-template-areas:
