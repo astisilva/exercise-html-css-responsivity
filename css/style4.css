@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin: 0;
+  background-color: antiquewhite;
 }
 
 main {
@@ -80,10 +81,7 @@ header{
 
 @media screen and (max-width:600px) {
 
-  body {
-    background-color: green;
-  }
-
+ 
   header {
     justify-content: center;
   }
