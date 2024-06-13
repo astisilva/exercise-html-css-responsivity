@@ -1,105 +1,100 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
-
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  margin: 3rem;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 50vh;
+  padding: 1rem;
 }
 
-.content {
-  display: grid;
-  height: 100%;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-gap: 2rem;
-  grid-row: 2 / 3;
+header{
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
 }
-
 .section-boll {
   background-color: purple;
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
   margin-bottom: 1rem;
-  grid-column: 1 / -1;
+ 
 }
 
-.box {
-  grid-column: span 3;
-  grid-row: span 2;
+.content {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "first second"
+    "third fourth";
 }
 
-.purple {
+
+.box{
+  min-height: 20vh;
+  width: 100%;
+  border-radius: 12px;
+}
+.box.first-box {
+  grid-area: first;
   background-color: fuchsia;
 }
 
-.pink {
+.box.second-box {
+  grid-area: second;
   background-color: pink;
 }
 
+.box.third-box {
+  grid-area: third;
+  background-color: pink;
+}
+
+.box.fourth-box {
+  grid-area: fourth;
+  background-color: fuchsia;
+}
+
+
 .bottom-box {
-  background-color: rgb(220, 15, 189);
-  grid-column: 3/ 5;
-  grid-row: span 2;
-  border-radius: 4rem;
+  background-color: hotpink;
+  border: none;
+  border-radius: 12px;
+  height: 2.5rem;
+  width: 30vw;
+  align-self: center;
 }
 
 .footer {
   background-color: rgb(129, 157, 129);
+  width: 100vw;
   min-height: 10vh;
 }
 
 @media screen and (max-width:600px) {
 
-
-
   body {
     background-color: green;
   }
 
-  .container {
-    margin: 1rem;
-
+  header {
+    justify-content: center;
   }
 
-
-  .content {
-    display: grid;
-    height: 50%;
-    grid-gap: 0.5rem;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    margin: 0;
-  }
-
-  .section-boll {
-    grid-column: 6/ 8;
-
-
-  }
-
-  .box {
-    grid-column: 1 / -1;
-    grid-row: span 1;
-  }
-
-
-  .bottom-box {
-    background-color: rgb(220, 15, 189);
-    grid-column: 6/ 8;
-    grid-row: span 1;
-    border-radius: 4rem;
-    margin: 0;
+  main {
+    .content {
+      grid-template-areas:
+        "first"
+        "second"
+        "fourth"
+        "third";
+    }
   }
 }
